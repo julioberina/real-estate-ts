@@ -11,9 +11,9 @@ type State = {
   appName: string;
 };
 
-const Hello: React.FC<HelloProps> = ({ person }) => {
+const Hello: React.FC<HelloProps> = (props) => {
   return (
-    <strong>Hello {person}. How are you</strong>
+    <strong>Hello {props.person}. How are you</strong>
   )
 }
 
