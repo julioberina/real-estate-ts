@@ -2,40 +2,19 @@ import React from 'react';
 import Header from './Header/Header';
 import './App.scss';
 
-type HelloProps = {
-  person: string;
-};
+type AppProps = {};
+type AppState = {};
 
-type Props = {};
-
-type State = {
-  appName: string;
-};
-
-const Hello: React.FC<HelloProps> = (props) => {
-  return (
-    <strong>Hello {props.person}. How are you</strong>
-  )
-}
-
-export default class App extends React.Component<Props, State> {
+export default class App extends React.Component<AppProps, AppState> {
   
-  constructor(props: Props) {
+  constructor(props: AppProps) {
     super(props);
-
-    this.state = {
-      appName: 'Real Estate App'
-    }
   }
 
   render() {
-    let appItems: string[] = ['First item', 'Second item', 'Third item'];
-
     return (
-      <div className="App">
-        <h1>{this.state.appName}</h1>
-        <Hello person="Julio"></Hello>
-        <Header items={appItems} />
+      <div>
+        <Header />
       </div>
     )
   }
