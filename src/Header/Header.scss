@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 header {
-    background-color: #9999ff;
+    background-color: navy;
+    color: white;
+    padding: 20px 100px;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+
+        a:not(.register-btn) {
+            margin: 50px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .register-btn {
+            text-decoration: none;
+            color: white;
+            background-color: #dd0000;
+            padding: 10px 30px;
+            margin-left: 20px;
+            margin-right: 50px;
+            border-radius: 5px;
+        }
+    }
+
 }
