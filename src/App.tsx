@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header/Header';
 import './App.scss';
 
 type HelloProps = {
@@ -28,10 +29,13 @@ export default class App extends React.Component<Props, State> {
   }
 
   render() {
+    let appItems: string[] = ['First item', 'Second item', 'Third item'];
+
     return (
       <div className="App">
         <h1>{this.state.appName}</h1>
         <Hello person="Julio"></Hello>
+        <Header items={appItems} />
       </div>
     )
   }
