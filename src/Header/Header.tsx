@@ -12,7 +12,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
     render() {
         return (
             <header>
-                <div className="logo">Logo</div>
+                <div className="logo">Real Estate</div>
 
                 <nav>
                     <a href="#">Create Ads</a>

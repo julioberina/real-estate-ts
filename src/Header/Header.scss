@@ -1,7 +1,7 @@
 header {
     background-color: navy;
     color: white;
-    padding: 20px 100px;
+    padding: 20px 40px;
     overflow: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -16,9 +16,13 @@ header {
         float: right;
 
         a:not(.register-btn) {
-            margin: 50px;
+            padding: 50px;
             text-decoration: none;
             color: white;
+        }
+
+        a:not(.register-btn):hover {
+            background: blue;
         }
 
         .register-btn {
